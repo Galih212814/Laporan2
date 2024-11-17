@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPORAN TEORI</title>
+    <style id="main-style">
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #333; 
+            border-radius: 15px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-bottom: 10px;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width: 768px){
+            .container{
+                width: 100%;
+                padding: 15px;
+            }
+            h1,h2,h3 {
+                font-size: 1.5rem;
+            }
+            .content{
+                font-size: 1rem;
+            }
+            button{
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+            .container{
+                width: 100%;
+                padding: 10px;
+                box-shadow: none;
+            }
+            h1,h2,h3 {
+                font-size: 1.2rem;
+            }
+            .content{
+                font-size: 0.9rem;
+            }
+            button{
+                width: 100%;
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <style id="alternate-style" disabled>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #a4decc;
+            color: rgb(21, 67, 152);
+        }
+        h1, h2, h3 {
+            margin-bottom: 5px;
+            color: #9c6a0e;
+        }
+        .content {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #800d0d;
+            color: #e1c6c7;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #333; 
+            border-radius: 15px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            background-color: #d8c4f3; 
+        }
+
+        @media screen and (max-width: 768px){
+            .container{
+                width: 100%;
+                padding: 15px;
+            }
+            h1,h2,h3 {
+                font-size: 1.5rem;
+            }
+            .content{
+                font-size: 1rem;
+            }
+            button{
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+            .container{
+                width: 100%;
+                padding: 10px;
+                box-shadow: none;
+            }
+            h1,h2,h3 {
+                font-size: 1.2rem;
+            }
+            .content{
+                font-size: 0.9rem;
+            }
+            button{
+                width: 100%;
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LAPORAN TEORI</h1>
+        <h2>Galih Putri Anggraeni | 202331036</h2>
+
+        <h3 onclick="toggleContent(this)">1. Mengapa menggunakan HTML, CSS serta JavaScript dalam pemrograman web?</h3>
+        <div class="content">
+            <p><b>HTML, CSS, & JavaScript</b> sangat penting, ketiganya memiliki peran berbeda tapi saling melengkapi.</p>
+            <p><b>1. HTML</b> <i><b>(HyperText Markup Language)</b></i> <br>
+                HTML digunakan untuk membuat kerangka & konten dari halaman web. Tanpa menggunakan HTML, web tidak akan memilki struktur / elemen dasar seperti teks, gambar, tautan, formulir, dan tabel. <b>Kelebihan:</b> menggunakan HTML yaitu, mudah dipelajari, sederhana, dan memungkinkan hierarki konten yang terstruktur dengan baik.
+            </p>
+            <p><b>2. CSS</b> <i><b>(Cascading Style Sheets)</b></i> <br>
+                CSS digunakan untuk mendesain tampilan dan tata letak halaman web. Dan mengatur elemen-elemen di HTML agar terlihat menarik. <b>Kelebihan:</b> menggunakan CSS yaitu, dapat memisahkan konten dari tampilan, dan kode bisa diatur, dan diubah.
+            </p>
+            <p><b>3. Javascript</b> <br>
+                Javascript digunakan untuk menambahkan fungsionalitas dinamis dan interaktivitas ke halaman web, elemen pada halaman web bisa diperbarui dan tanpa harus memuat ulang seluruh halaman. <b>Kelebihan:</b> menggunakan javascript bisa mengembangkan fitur canggih, contohnya validasi form.
+            </p>
+        </div>
+
+        <h3 onclick="toggleContent(this)">2. Bagaimana HTML, CSS serta JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+        <div class="content">
+            <p><b>1. Mengintegrasikan CSS dengan HTML</b></p>
+                <ul style="list-style-type: square; padding-left: 20px;">
+                    <li><b>Internal CSS:</b> ditulis langsung dalam tag <code>&lt;style&gt;</code> pada bagian <i>head</i> dalam dokumen HTML.</li>
+                    <li><b>Eksternal CSS:</b> ditulis dengan file terpisah <code>.css</code>, dihubungkan ke HTML menggunakan tag <i>link</i> di dalam <i>head</i>.</li>
+                </ul>
+            <p><b>2. Mengintegrasikan Javascript dengan HTML</b></p>
+                <ul style="list-style-type: square; padding-left: 20px;">
+                    <li><b>Internal JavaScript:</b> ditulis di dalam tag <code>&lt;script&gt;</code> pada bagian <i>head</i> atau sebelum tag penutup <i>/body</i>.</li>
+                    <li><b>Eksternal JavaScript:</b> ditulis dengan file terpisah <code>.js</code>, dihubungkan ke HTML menggunakan tag <i>script</i> menggunakan atribut <i>src</i>.</li>
+                </ul>
+        </div>
+
+        <h3 onclick="toggleContent(this)">Kesimpulan</h3>
+        <div class="content">
+            <ul>
+                <li><b>HTML</b> membangun kerangka dan konten dasar halaman web, memastikan struktur yang jelas dan hierarki yang baik.</li>
+                <li><b>CSS</b> mengatur desain dan tata letak, memisahkan tampilan dari konten untuk fleksibilitas dalam mendesain.</li>
+                <li><b>JavaScript</b> menambahkan interaktivitas dan fungsi dinamis, memungkinkan perubahan pada elemen halaman tanpa memuat ulang.</li>
+            </ul>
+            
+            <p><b>HTML, CSS, & JavaScript</b> dapat diintegrasikan dengan mudah:</p>
+            <ul>
+                <li><b>CSS</b> melalui tag <code>&lt;style&gt;</code> (internal CSS) atau file <code>.css</code> (eksternal CSS).</li>
+                <li><b>JavaScript</b> melalui tag <code>&lt;script&gt;</code> (internal javascript) atau file <code>.js</code> (eksternal javascript).</li>
+            </ul>
+        </div>
+
+        <button onclick="toggleStyle()">Ubah Mode Tampilan</button>
+    </div>
+
+    <script>
+        function toggleContent(header) {
+            let content = header.nextElementSibling;
+            let confirmHide = confirm('Apakah Anda ingin menyembunyikan konten daripada bagian ini?');
+            if (confirmHide) {
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            }
+        }
+
+        function toggleStyle() {
+            let mainStyle = document.getElementById('main-style');
+            let alternateStyle = document.getElementById('alternate-style');
+            
+            if (!mainStyle.disabled) {
+                mainStyle.disabled = true;   
+                alternateStyle.disabled = false; 
+    } 
+    else {
+        mainStyle.disabled = false;  
+        alternateStyle.disabled = true; 
+    }
+}
+    </script>
+</body>
+</html>
